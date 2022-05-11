@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/IssueTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issueDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IssueTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3sp"
+            android:ellipsize="end"
+            android:maxLength="200"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/userNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issueDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:text="Username:"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issueDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@id/userNameTitle"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@id/issueDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@id/userName" />
+
+        <TextView
+            android:id="@+id/updatedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15sp"
+            android:text="@string/updated_on"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/updateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/updatedOn"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

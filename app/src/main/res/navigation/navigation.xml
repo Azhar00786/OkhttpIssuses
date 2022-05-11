@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigatrion"
+    app:startDestination="@id/okhttpIssuesFragment">
+
+    <fragment
+        android:id="@+id/okhttpIssuesFragment"
+        android:name="com.example.okhttpissues.ui.fragments.OkhttpIssuesFragment"
+        android:label="fragment_okhttp_issues"
+        tools:layout="@layout/fragment_okhttp_issues">
+        <action
+            android:id="@+id/action_okhttpIssuesFragment_to_issueDetailFragment"
+            app:destination="@id/issueDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/issueDetailFragment"
+        android:name="com.example.okhttpissues.ui.fragments.IssueDetailFragment"
+        android:label="fragment_issue_detail"
+        tools:layout="@layout/fragment_issue_detail">
+        <argument
+            android:name="user_number"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
